@@ -62,7 +62,7 @@
         "builtinGlobals": true
       }
     ],
-    "semi": ["error", "never"],
+    // "semi": ["error", "never"],
     "space-in-parens": ["error"],
     "space-infix-ops": "error",
     "object-curly-spacing": ["error", "always"],
