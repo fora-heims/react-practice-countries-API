@@ -3,9 +3,9 @@ import './CountryCard.css';
 
 export default function CountryCard(props) {
   return (
-    <div>
-      <p>{props.name}</p>
-      <p>{props.continent}</p>
+    <div className="country-card">
+      <p className="name">{props.name}</p>
+      <img alt={props.name} src={`https://flagcdn.com/48x36/${props.iso2.toLowerCase()}.png`} />
     </div>
   );
 }
