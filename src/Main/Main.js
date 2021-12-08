@@ -7,6 +7,8 @@ export default function Main() {
   const [countries, setCountries] = useState([]);
   const [query, setQuery] = useState('');
   const [contQuery, setContQuery] = useState('All');
+  const [sorted, setSorted] = useState(false);
+
   useEffect(() => {
     const fetchData = async () => {
       const countriesData = await getCountries();
@@ -25,6 +27,9 @@ export default function Main() {
   return (
     <div>
       <h1>API&apos;s, Array Methods, and React</h1>
+      <button value={sorted} onClick={(e) => setSorted(true)}>
+        Sort A-Z
+      </button>
       <input
         placeholder="Search Countries"
         value={query}
